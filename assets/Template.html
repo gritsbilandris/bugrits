@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<title>BTS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+  body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+  }
+
+  /* Create a Parallax Effect */
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* First image (Logo. Full height) */
+  .bgimg-1 {
+    background-image: url("http://bts.ibighit.com/darkwild/photo/bts-main.jpg");
+    min-height: 100%;
+  }
+
+  /* Second image (Portfolio) */
+  .bgimg-2 {
+    background-image: url("lol.png");
+    min-height: 400px;
+    
+  }
+
+  /* Third image (Contact) */
+  .bgimg-3 {
+    background-image: url("");
+    min-height: 400px;
+  }
+
+  .w3-wide {letter-spacing: 10px;}
+  .w3-hover-opacity {cursor: pointer;}
+
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+    }
+  }
+</style>
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button teal black darken-4 white-text">HOME</a>
+      <a href="#profile" class="w3-bar-item w3-button w3-hide-small "><i class="fa fa-user"></i> PROFILE</a>
+      <a href="#album" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> ALBUM</a>
+
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+        <i class="fa fa-search"></i>
+      </a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#profile" class="w3-bar-item w3-button" onclick="toggleFunction()">PROFILE</a>
+      <a href="#album" class="w3-bar-item w3-button" onclick="toggleFunction()">ALBUM</a>
+
+    </div>
+  </div>
+
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">WE<span class="w3-hide-small"> ARE</span> BULLETPROOF</span>
+    </div>
+  </div>
+
+  <!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="profile">
+    <h1 class="w3-center">BTS</h1>
+    <style>
+      body{
+        background-color:#000000;
+      }
+    </style>
+    <p class="w3-center"><em>Bulletproof Boy Scouts</em></p>
+    <p>BTS, also known as Bangtan Boys, is a seven-member South Korean boy band formed by Big Hit Entertainment. Their name in Korean, Bangtan Sonyeondan (Hangul: 방탄소년단; Hanja: 防彈少年團), and Japanese, Bōdan Shōnendan (防弾少年団?), both translate to "Bulletproof Boy Scouts".  They debuted on June 13, 2013, with the song "No More Dream" from their first album, 2 Cool 4 Skool, for which they won several "New Artist of the Year" awards including those at the 2013 MelOn Music Awards and Golden Disk Awards, and the 2014 Seoul Music Awards. A year after their debut, they received major bonsang awards for their subsequent albums Dark & Wild and The Most Beautiful Moment in Life, Part 1.
+    </p>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-light-grey w3-wide"></span>
+      </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="album">
+      <h1 class="w3-center">ALBUMS</h1>
+      <p class="w3-center"> <em> </em> </p><br>
+
+      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+      <div class="w3-row-padding w3-center">
+        
+          <div id="app"></div>
+          <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous"></script> 
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script><<<<
+          <script type="text/javascript" src="api.js"></script>
+     </div>
+
+      <div class="w3-row-padding w3-center">
+
+        <div id="app2"></div>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+        <script type="text/javascript" src="api.js"></script>
+        
+     <div class="w3-row-padding w3-center">
+          <div id="app3"></div>
+          <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous"></script> 
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+          <script type="text/javascript" src="api.js"></script>
+   </div>
+
+       
+     <div class="w3-row-padding w3-center">
+          <div id="app4"></div>
+          <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous"></script> 
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+          <script type="text/javascript" src="api.js"></script>
+     </div>
+
+
+      
+
+   </body>
+   </html>
