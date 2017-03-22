@@ -7,7 +7,7 @@ app.set('port', (process.env.PORT || 5000));
 //use static files
 app.use(express.static(path.join(__dirname, 'assets')));
 //express routes
-app.get('/main', function(req, res){
+app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'assets/Template.html'));
 });
 //express server listen
